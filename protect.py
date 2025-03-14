@@ -30,7 +30,7 @@ def get_args():
     parser.add_argument('--model', type=str, default='BERT_VITS2', help='the surrogate model')
     parser.add_argument('--batch-size', type=int, default=27, help='the batch size of protection')
     parser.add_argument('--gpu', type=int, default=0, help='use which gpu')
-    parser.add_argument('--mode', type=str, default="clean", choices=["SPEC", "SafeSpeech"], help='the protection mode')
+    parser.add_argument('--mode', type=str, default="SPEC", choices=["SPEC", "SafeSpeech"], help='the protection mode')
     parser.add_argument('--checkpoint-path', type=str, default='checkpoints', help='the storing path of the checkpoints')
     parser.add_argument('--epsilon', type=int, default=8, help='the perturbation radius')
     parser.add_argument('--perturbation-epochs', type=int, default=200, help='the iteration numbers of the noise')
