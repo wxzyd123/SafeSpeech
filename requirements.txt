@@ -6,9 +6,7 @@ pymcd==0.2.1
 pysndfx==0.3.6
 soundfile==0.12.1
 speechbrain==1.0.2
-torch==2.0.0
 torch_stoi==0.2.1
-torchaudio==2.0.1
 tqdm==4.64.1
 librosa
 matplotlib
