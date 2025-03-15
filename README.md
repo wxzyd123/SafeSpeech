@@ -19,6 +19,12 @@ conda create --name safespeech python=3.8
 conda activate safespeech
 pip install -r requirements.txt
 sudo apt install ffmpeg
+
+# For CUDA 11.8
+pip install torch==2.0.0 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+
+# For CUDA 12.4
+pip install torch==2.3.1 torchaudio==2.3.1
 ```
 
 
