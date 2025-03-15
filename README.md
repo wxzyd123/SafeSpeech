@@ -1,8 +1,8 @@
 # SafeSpeech
 
-This is the source code of our paper "SafeSpeech: Robust and Universal Voice Protection Against Malicious Speech Synthesis" in the USENIX Security 2025. We propose a proactive framework named SafeSpeech utilizing the pivotal objective optimization and Speech PErturbative Concealment (SPEC) techniques to prevent publicly uploaded speeches from unauthorized and malicious speech synthesis.
+This is the source code of our paper "SafeSpeech: Robust and Universal Voice Protection Against Malicious Speech Synthesis" in the USENIX Security 2025. We propose a proactive framework named SafeSpeech that utilizes the pivotal objective optimization and Speech PErturbative Concealment (SPEC) techniques to prevent publicly uploaded speeches from malicious speech synthesis.
 
-Our paper is comming soon...
+Our paper is coming soon...
 
 \[[Demo Page](https://wxzyd123.github.io/safespeech)\]
 
@@ -10,7 +10,7 @@ Our paper is comming soon...
 
 
 ## Setup
-We test our experiments on Ubuntu 20.04. At least one GPU is needed with CUDA version 12.x.
+We test our experiments on Ubuntu 20.04. At least one GPU is needed.
 
 The required dependencies can be installed by running the following:
 
@@ -47,7 +47,7 @@ In our paper, we have conducted our experiments on two datasets.
 
 For [LibriTTS](http://www.openslr.org/60/), we download the train-clean-100.tar.gz subset and select speaker 5339. For [CMU ARCTIC](http://festvox.org/cmu_arctic/packed/), we select 100 sentences from each speaker. You can use your customized voices to achieve protection as follows, and we use the LibriTTS dataset as an example:
 
-1. Move dataset to `data/{dataset_name}`, the structure of dataset can be `data/{dataset_name}/{speaker-id}/{name}.wav`.
+1. Move the dataset to `data/{dataset_name}`, the structure of the dataset can be `data/{dataset_name}/{speaker-id}/{name}.wav`.
   
 2. The training dataset is indexed by a file list. The initial file list is like `{path}|{speaker-id}|{language}|{text}`, such as the provided`filelists/libritts_train_text.txt`. Then convert the file list to the correct form that BERT-VITS2 can accept by:
    ```bash
