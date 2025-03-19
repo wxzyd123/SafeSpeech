@@ -28,7 +28,7 @@ def main():
     dataset_name = args.dataset
     mode = args.mode
 
-    audio_folder = f"data/{audio_folder}/protected/{mode}"
+    audio_folder = f"data/{dataset_name}/protected/{mode}"
     audios = os.listdir(audio_folder)
 
     gpu = int(args.gpu)
