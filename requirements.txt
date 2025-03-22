@@ -20,7 +20,7 @@ tensorboard
 Unidecode
 amfm_decompy
 jieba
-transformers
+transformers==4.46.3
 pypinyin
 cn2an
 gradio==3.50.2
