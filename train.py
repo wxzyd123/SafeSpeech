@@ -72,7 +72,7 @@ def main():
 
     batch_size = int(args.batch_size)
     print(f"The batch size is set as {batch_size} now.")
-    assert batch_size == 64
+    # assert batch_size == 64
     hps.train.batch_size = batch_size
 
     if mode != "clean":
