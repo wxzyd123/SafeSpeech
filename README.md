@@ -13,7 +13,7 @@ We test our experiments on Ubuntu 20.04. At least one GPU is needed.
 The required dependencies can be installed by running the following:
 
 ```bash
-conda create --name safespeech python=3.8
+conda create --name safespeech python=3.10
 conda activate safespeech
 pip install -r requirements.txt
 sudo apt install ffmpeg
